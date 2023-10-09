@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>490</y>
+      <w>210</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>Course
+--
+-id: number
+-image: Image
+-name: string
+-language: string
+-length: number
+-stars: number
+-difficulty: number
+-description: string
+-content: string
+
+-
+
+-getters();
+-setters():
++Create();
++Read();
++Update();
++Delete();
++Find();
++Rate();
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>380</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=n
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>720</x>
+      <y>780</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Nota:
+Solo podrá modificar
+el curso un usuario cuyo
+rol sea de administrador.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>820</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>0</y>
+      <w>210</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-id: number
+-name: string
+-img: Image
+-surname: string
+-username: string
+-age: number
+-course: Course
+-email: string
+-password: string
+-cellphone: number
+-birthDate: Date
+-rol: string
+
+--
+
+-getters();
+-setters():
++Create();
++Read();
++Update();
++Delete();</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
